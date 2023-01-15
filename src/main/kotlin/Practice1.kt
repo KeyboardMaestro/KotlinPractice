@@ -73,7 +73,7 @@ fun testFun(){
     var local2 : Number = 1.2;
     var x : Float = 12.2f;
     x -= 1.2f
-    println(x.javaClass)
+    println(local.javaClass) // Double
     var y = 0b0000_1010
     println(y shl 1)
 }
