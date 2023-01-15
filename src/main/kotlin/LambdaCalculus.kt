@@ -1,15 +1,12 @@
-fun main() {
-    var a = 10;
-    var b = 20;
-    var c = 2;
-    var d = 1;
-    println(highDimension({ x, y -> x * y}, c, d));
-    val result = callByValue(lambda());
-    println(result)
-    val test = callByName(lambda)
-    println(test)
-}
+import java.util.StringJoiner
 
+fun main() {
+    oneParam { a -> "Hello $a" }
+}
+fun oneParam(out: (String) -> String) : Unit{
+    println(out("OneParam"))
+}
+fun noParam(out: () -> Int) = println(out());
 fun highDimension (sum : (Int, Int) -> Int, a : Int, b : Int) : Int{
     return sum(a,b);
 }
