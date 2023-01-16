@@ -1,3 +1,5 @@
+package programmers.lv0
+
 class Triangle1 {
     fun solution(sides: IntArray): Int {
         sides.sort();
