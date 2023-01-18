@@ -12,4 +12,7 @@ fun main() {
     val human = Person("Jude", 25)
     println("My name is ${human.name} and I am ${human.age} years old")
     println("\$")
+    var x : Int = 7;
+    var y : Int = 3
+    println(x/y)
 }
